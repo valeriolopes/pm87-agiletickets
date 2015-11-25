@@ -110,4 +110,8 @@ public class Sessao {
 		return preco;
 	}
 	
+	public double getPercentualIngressosDisponiveis() {
+		return (getTotalIngressos() - getIngressosReservados()) / getTotalIngressos().doubleValue();
+	}
+	
 }
